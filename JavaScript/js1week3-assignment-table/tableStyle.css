@@ -1,0 +1,49 @@
+table {
+
+background-color: rgb(231, 236, 241);
+border: 1px solid;
+text-align: center;
+font-family: 'Arial';
+
+margin: auto; /*to make the table in the middel*/
+
+}
+
+
+ h1 { 
+text-align:center;
+text-decoration:underline;
+ }
+
+
+th {
+padding: 0em;
+color: rgb(0, 183, 255);
+text-transform: uppercase;
+background: antiquewhite;
+height: 50px;
+padding: 15px;
+text-align: center;
+margin: 0 auto;
+} 
+
+
+tr:hover {
+
+background: #c98888;
+color: antiquewhite
+
+}
+
+td:hover {
+
+color: rgb(85, 85, 85);
+
+}
+td, img {
+
+padding: 1em;
+border: 1px solid;
+background-color: rgb(231, 236, 241);
+width: 5em;
+}
