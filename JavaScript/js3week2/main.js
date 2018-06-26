@@ -10,6 +10,7 @@ function main() {
 
             repositories = data;
 
+            console.log("Success", repositories);
             showRepositoriesInSelect(repositories);
 
             closeModal()
@@ -74,7 +75,7 @@ function showAdditionalInfo(selectedRepository) {
 
     const repoName = document.getElementById('repoName');
 
-    repoName.innerHTML = `<strong>Repository :</strong><p>${selectedRepository.name}</p> <br>
+    repoName.innerHTML = ` <strong>Repository :</strong><a href = "${selectedRepository.html_url}" > ${selectedRepository.name}</a><br>
                                 <strong>Description :</strong><p>${selectedRepository.description}</p> <br>
                                 <strong>Forks :</strong><p>${selectedRepository.forks}</p> <br>
                                 <strong>Updated :</strong><p>${selectedRepository.updated_at}</p>`;
@@ -138,8 +139,9 @@ function createListItemForEachContributor(contributors) {
                                             <p class="name"> ${contributor.login}</p> 
 
                                             <span class="cont"> ${contributor.contributions}</span>`;
+      
 
-    })
+            })
 
 }
 
