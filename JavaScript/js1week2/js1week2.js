@@ -149,13 +149,27 @@ console.log(3 === 3 ? "yes" : "no");*/
 console.log("19==================================================================================");
 /*6.Create a function called vehicle, like before, but takes another parameter called age,
  so that vehicle("blue", 1, 5) prints 'a blue used car'*/
-function vehicle(color, code, age) {
-    if (code = 1) {
-        console.log("a", color, "used", "car");
-    } else if (code = 2) {
-        console.log("a", color, "used", "motorbike");
+function vehicle(y, z, age) {
+    let vehicleType;
+    let vehicleAge;
+
+    if (z === 1) {
+        vehicleType = 'car';
+    } else if (z === 2) {
+        vehicleType = 'motorbike';
     }
-} vehicle("blue", 2, 5);
+
+
+    if (age === 0) {
+        vehicleAge = 'new';
+    } else {
+        vehicleAge = 'used';
+    }
+
+    console.log("a " + y + " " + vehicleAge + " " + vehicleType);
+}
+
+console.log(vehicle("blue", 1, 5));
 
 console.log("20==================================================================================");
 //7.Make a list of vehicles, you can add "motorbike", "caravan", "bike", or more.
