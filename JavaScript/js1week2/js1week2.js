@@ -1,4 +1,4 @@
-console.log('WEEK2 OF JAVASCRIPT I called the file "jsweek2" and it is inside folder JavaScript on the desktop');
+
 
 //1. Strings!
 let myString = "hello,this,is,a,difficult,to,read,sentence";
