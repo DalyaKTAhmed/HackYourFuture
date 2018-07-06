@@ -298,8 +298,6 @@ console.log(bar);                   // 42.
 console.log(typeof bar);
 
 
-
-console.log("30===================================================================================");
 /*17.What does the following code return? (And why?):
 let bar = 42;
 typeof typeof bar;*/
