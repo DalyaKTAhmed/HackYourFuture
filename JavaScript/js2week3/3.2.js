@@ -1,4 +1,5 @@
 
+
 // 3.2 You must write a function that takes 4 arguments.
 
 /*  A start value and  An end value
@@ -36,36 +37,23 @@ Both functions should be called if the array value is divisible by both 3 and 5.
 
  */
 
-function createArray(startIndex, stopIndex) {
-    let arr = [];
-    while (startIndex <= stopIndex) {
+function threeFive(startIndex, stopIndex, threeCallback, fiveCallback) {
+    const values = [];
+    for (i = startIndex; i <= stopIndex; i++) {
+        values.push(i);
+        if (i % 3 === 0) {
+            console.log(i);
+            threeCallback();
+        }
 
-        arr.push(startIndex++)
-
+        if (i % 5 === 0) {
+            console.log(i);
+            fiveCallback();
+        }
     }
 
-    return arr;
 }
-function threeFive(startIndex, stopIndex, threeCallback, fiveCallback) {
 
-    let arr = createArray(startIndex, stopIndex);
-
-    arr.forEach(element => {
-        if (element % 3 === 0) {
-
-            threeCallback();
-
-        }
-
-        if (element % 5 === 0) {
-
-            fiveCallback();
-
-        }
-
-    })
-
-}
 threeFive(10, 15, sayThree, sayFive);
 
 
