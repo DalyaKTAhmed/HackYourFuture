@@ -1,0 +1,132 @@
+html{
+    box-sizing:border-sizing;
+}
+*, *:after, *:before{
+    box-sizing: inherit;
+}
+
+body{
+    background-color: white;
+}
+
+ .body{
+     display:flex;
+     font-family:  Arial;
+ }
+
+.header{
+    margin-top: 2em;
+    padding: 2em;
+      background-color:darkblue; 
+      color:white;
+      width: 90.9%;
+ }
+
+ 
+ select{
+     height:2em;
+ }
+ 
+
+ .repo{
+     margin-top:2em;
+     width:40%;
+    height: 10em;
+     box-shadow: 0px 0px 20px rgba(0,0,0,0.10),
+       0px 10px 20px rgba(0,0,0,0.05),
+       0px 20px 20px rgba(0,0,0,0.05),
+       0px 30px 20px rgba(0,0,0,0.05);
+       padding:2em;
+       line-height: 2em;
+       margin-right: 7em;
+       
+ }
+ .contributors{
+    width:40%; 
+    margin-top:2em;
+    margin-block-end: 0%;
+     box-shadow: 0px 0px 20px rgba(0,0,0,0.10),
+       0px 10px 20px rgba(0,0,0,0.05),
+       0px 20px 20px rgba(0,0,0,0.05),
+       0px 30px 20px rgba(0,0,0,0.05);
+       padding:1em; 
+ }
+ ul li{
+    list-style-type:none;
+   margin-bottom: 2em;
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+ }
+ img{
+      grid-column-end: span 1; 
+     width:3em;
+     height: 3em;
+ }
+ p{
+    grid-column-end: span 2 ; 
+     display: inline;
+     
+ }
+ 
+ 
+ span{
+    grid-column-end: span 1; 
+    padding-top: 0.3em;
+    border-radius: 7%;
+    width: 2em;
+    height: 1.5em;
+    text-align: center;
+    color:white;
+    background-color: grey;
+   
+}
+
+#modal {
+    display: none;
+    position: absolute;
+    left: 43%;
+    width: 135px;
+    height: 135px;
+    padding:30px, 15px, 0px;
+    border: 3px solid #ababab;
+    box-shadow:1px 1px 10px #ababab;
+    border-radius:20px;
+    background-color: white;
+    text-align:center;
+   
+}
+
+#loader{
+
+    border: 16px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 16px solid #3498db;
+    width: 100px;
+    height: 100px; 
+    -webkit-animation: spin 2s linear infinite; /* Safari */
+    animation: spin 2s linear infinite;
+
+}
+
+    
+
+    /* Safari */
+
+    @-webkit-keyframes spin {
+
+      0% { -webkit-transform: rotate(0deg); }
+
+      100% { -webkit-transform: rotate(360deg); }
+
+    }
+
+    
+
+    @keyframes spin {
+
+      0% { transform: rotate(0deg); }
+
+      100% { transform: rotate(360deg); }
+
+    }
+
