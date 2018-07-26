@@ -192,7 +192,26 @@ background-color:darkgray;
 
 }
 
-.footer{
-    color:red; 
-    text-align:center;
+@media only screen and (min-width:450px)
+{
+  #header h1 {width:100%;}
+
+  #PersonalInformation {width:100%;}
+   
+ #social-media-info {width:100%;}
+
+  #Education {width:100%;}
+
+ #WorkExperience {width:100%;}
+    
+ #ResearchInterset {width:100%;}
+   
+  #Languages{width:100%;}
+    
+ #Activities { width:100%;}
+   
+ #AdditionalSkill {width:100%;}
+    
+ #LearningStrategies {width:100%;}
+
 }
