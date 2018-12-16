@@ -118,11 +118,11 @@ console.log(m);
 
 console.log('The value of my 1st variable will be:5');
 
-console.log('The value of my 2nd variable will be:Hi');
+console.log('The value of my 2nd variable will be:false');
 
-console.log('The value of my 3rd variable will be:12300000');
+console.log('The value of my 3rd variable will be:7');
 
-console.log('The value of my 4th variable will be:34.00');
+console.log('The value of my 4th variable will be:['1', '2', '3'');
 
 
 
