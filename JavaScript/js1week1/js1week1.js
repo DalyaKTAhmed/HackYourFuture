@@ -1,101 +1,53 @@
 //1
-
 console.log("Hello World!");//english
-
 console.log("Hola Mundo!");//Spanish
-
 console.log("Hej Världen!");//Swedish
 
-
-
 //2
-
 var x
-
 console.log("the value of my variable x will be UNDIFINED");
-
 console.log(x="hello dalia");
 
-
-
 //3
-
 var x="3";
-
 console.log("The value of x will be:3");
 
-
-
 //4
-
 var y="Hello";
-
 console.log("the value of my string will be:Hello");
-
 var y="JavaScript"
-
 console.log("the value of my string will be:JavaScript");
-
 console.log(y);
 
-
-
 //5. How do you round the number 7.25, to the nearest integer (i.e., whole number)?
-
 var z="7.25";
-
 console.log(z);
-
 var a = Math.round(7.25);
-
 console.log(a);
-
 var n
-
 if (a > z) {
-
 n = a;
-
-}else{
-
+}
+else{
     n = z;
-
 }
 
-
-
 //6.Arrays!
-
 var plurality =[];
-
 console.log("it is an empty array");
-
 console.log(plurality);
-
 var favoriteAnimals =["dog","cat", "dolphin", "panda"]
-
 console.log(favoriteAnimals); 
-
 favoriteAnimals.push("baby pig");
-
 console.log(favoriteAnimals); 
-
-
 
 //7. More strings
-
 let  myScrings= "this is a test";
-
 console.log(myScrings);
-
 myScrings.length;
-
 console.log(myScrings.length);
 
-
-
 //8. Write a program that checks the types of two variables and prints out SAME TYPE if they are the same type.
-
 var x=5;                      
 let r= false;               
 var z= 7;               
@@ -140,7 +92,6 @@ console.log("--------------");
 }
 }
 
-
 //9. If x equals 7, and the only other statement is x = x % 3, what would be the new value of x?
 //9.1 Add at least 3 console.log statements in which you show that you understand what % does.
 
@@ -151,7 +102,6 @@ x = 1;
 console.log("%The modular operator returns the division remainder.");
 console.log("x %= y This statement same as x = x % y");
 console.log("ex; 9 %= 2 is 1");
-
 
 //10. Write a program to answer the following questions:
 //10.1 Can you store multiple types in an array? Numbers and strings? Make an example that illustrates your answer.
