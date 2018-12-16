@@ -100,7 +100,7 @@ var x=5;
 
 let r= false;               
 
-var z= 123e5;               
+var z= 7;               
 
 var m=['1', '2', '3'];          
 
