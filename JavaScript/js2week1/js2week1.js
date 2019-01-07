@@ -2,8 +2,8 @@
 
 console.log('======Custom DOM manipulation challenge=====');
 
-/*1.Open a new js file and start by declaring an array that contains 10 strings.
-These strings should be of book titles you have read(or made up) and be lowercase without
+/*1.Declare an array that contains 10 strings.
+These strings should be of book titles and be lowercase without
 spaces or special characters so that you can use these later as Id's.
     (Example: Harry Potter's - The Chamber of Secrets -> harry_potter_chamber_secrets).*/
 
@@ -38,32 +38,25 @@ var myBooks = [
 
 let x;
 
-for (let i in myBooks) {
+for (let book in myBooks) {
 
-    x += myBooks[i] + "<br>";
+    x += myBooks[book] + "<br>";
 
 }
 
 //console.log('my array is:' + myBooks);
 
 
-//3.Make a function (or functions) that generate a ul with li elements for each book ID in the array using a for loop.
+//3.Make a functionthat generate a ul with li elements for each book ID in the array using a for loop.
 
 var ul = document.createElement('ul');
 document.body.appendChild(ul)
 
-
-
 myBooks.forEach(function (book) {
-
     var li = document.createElement('li');
-
     ul.appendChild(li);
-
     li.innerHTML = + book;
-
 }
-
 )
 
 
@@ -71,110 +64,79 @@ myBooks.forEach(function (book) {
 information about the book from the object and display that.
  Make sure you choose the right html elements for each piece of info, for instance, a heading for the title.*/
 
-// const bookObjects = {
+ const bookObjects = {
 
-//     weetzie_bat:
+    weetzie_bat:
+    {
+        title: "Weetzie Bat",
+        language: "English",
+        author: "Sandra"
+    },
 
-//         {
-//             title: "Weetzie Bat",
+    tales_the_city:
+    {
+        title: "Tales of the City",
+        language: "Swedish",
+        author: "Ahmed"
+    },
 
-//             language: "English",
+    the_serial:
 
-//             author: "Sandra"
+    {
+        title: "The Serial",
+        language: "Arabic",
+        author: "Paul"
+    },
 
-//         },
+    east_eden:
+    {
+        title: "East of Eden",
+        language: "English",
+        author: "Kamal"
+    },
 
-//     tales_the_city:
+    island_blue_dolphins:
+    {
+        title: "Island of the blue Dolphins",
+        language: "Arabic",
+        author: "Unknown"
+    },
 
-//         {
+    of_mice_men: 
+    {
+        title: "Of Mice and Men",
+        language: "English",
+        author: "Noor"
+    },
 
-//             title: "Tales of the City",
+    the_onion_field: 
+    {
+        title: "The Onion Field",
+        language: "Swedish",
+        author: "Wafaa"
+    },
 
-//             language: "Swedish",
+    the_grapes_wrath: 
+    {
+        title: "The Grapes of Wrath",
+        language: "English",
+        author: "Saloa"
+    },
 
-//             author: "Ahmed"
+    less_than_zero: 
+    {
+        title: "Less Than Zero",
+        language: "English",
+        author: "Udy"
+    },
 
-//         },
-
-//     the_serial:
-
-//         {
-//             title: "The Serial",
-
-//             language: "Arabic",
-
-//             author: "Paul"
-
-//         },
-
-//     east_eden: {
-
-//         title: "East of Eden",
-
-//         language: "English",
-
-//         author: "Kamal"
-
-//     },
-
-//     island_blue_dolphins: {
-
-//         title: "Island of the blue Dolphins",
-
-//         language: "Arabic",
-
-//         author: "Unknown"
-
-//     },
-
-//     of_mice_men: {
-
-//         title: "Of Mice and Men",
-
-//         language: "English",
-
-//         author: "Noor"
-
-//     },
-
-//     the_onion_field: {
-
-//         title: "The Onion Field",
-
-//         language: "Swedish",
-
-//         author: "Wafaa"
-//     },
-
-//     the_grapes_wrath: {
-
-//         title: "The Grapes of Wrath",
-
-//         language: "English",
-
-//         author: "Saloa"
-
-//     },
-
-//     less_than_zero: {
-
-//         title: "Less Than Zero",
-
-//         language: "English",
-
-//         author: "Udy"
-
-//     },
-
-//     rain_of_glad: {
-
-//         title: "Rain of Gold",
-
-//         language: "English",
-
-//         author: "Linn"
-//     }
-// };
+    rain_of_glad:
+     {
+        title: "Rain of Gold",
+        language: "English",
+        author: "Linn"
+    }
+};
 
 // //5.Now change the function you used to display the book ID's in a list to 
 
@@ -182,48 +144,44 @@ information about the book from the object and display that.
 
 // //Make sure you choose the right html elements for each piece of info, for instance, a heading for the title.
 
-// function bookInfo(object) {
+ function bookInfo(object) {
 
-//     var ul = document.createElement("ul");
+     var ul = document.createElement("ul");
 
-//     document.body.appendChild(ul);
+     document.body.appendChild(ul);
 
-//     var array = Object.keys(bookObjects);
+     var array = Object.keys(bookObjects);
 
-//     for (var i = 0; i < array.length; i++) {
+     for (var i = 0; i < array.length; i++) {
 
-//         var li = document.createElement("li");
+         var li = document.createElement("li");
 
-//         htmlElements(i, li);
+         htmlElements(i, li);
 
 
-//         ul.appendChild(li); //add the list il to ul.
+         ul.appendChild(li); //add the list il to ul.
 
-//         ul.style.listStyleType = 'none';           //removes the "bullet"
+         ul.style.listStyleType = 'none';           //removes the "bullet"
 
-//         ul.style.maxWidth = '50%';
+         ul.style.maxWidth = '50%';
 
-//     }
+     }   function htmlElements(i, li) {
 
-//     function htmlElements(i, li) {
+    li.innerHTML = `<li style="border: 1px solid gray; background: mintcream; padding: 1em;text-align:center;">
+    <h2>${object[array[i]].title}</h2>
+   <p>
+          <span style="margin-right: 0.5em; font-weight: bold;">Writen by:</span>
+          <span>${object[array[i]].author}</span></p>
+     <p>
+        <span style="padding-right: 0.5em; font-weight: bold;">Language</span>
+          <span>${object[array[i]].language}</span>
+          </p>
+ </li>`;
+}
 
-//         li.innerHTML = `<li style="border: 1px solid gray; background: mintcream; padding: 1em;text-align:center;">
-//                                 <h2>${object[array[i]].title}</h2>
-//                                 <p>
-//                                     <span style="margin-right: 0.5em; font-weight: bold;">Writen by:</span>
-//                                     <span>${object[array[i]].author}</span></p>
-//                                 <p>
-//                                     <span style="padding-right: 0.5em; font-weight: bold;">Language</span>
-//                                     <span>${object[array[i]].language}</span>
-//                                     </p>
-//                             </li>`;
+}
 
-//     }
-
-// }
-
-// bookInfo(bookObjects);
-
+bookInfo(bookObjects);
 //6.Beautify your html page with css, add sources and alts to each of the images.
 
 
